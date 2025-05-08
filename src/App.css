@@ -36,3 +36,219 @@
     transform: rotate(360deg);
   }
 }
+/* body {
+  background: #225;
+} */
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 97vh;
+}
+
+.image-container {
+  --size: 320px;
+  
+  width: var(--size);
+  height: var(--size);
+  background: linear-gradient(indigo, deeppink);
+  border: 15px solid #fff;
+  border-bottom-width: 50px;
+  box-shadow: 6px 6px 15px #0008;
+  rotate: -5deg;
+  user-select: none;  
+  overflow: hidden;
+}
+
+.manzdev {
+  rotate: -6deg;
+  translate: 0 20px;
+  filter: drop-shadow(6px 0 4px #0006)
+}
+
+.container {
+  position: relative;
+  
+  :is(.gradient, img) {
+    position: absolute;
+  }
+}
+
+.gradient {
+  background: radial-gradient(red, black);
+  mix-blend-mode: screen;
+  width: 100%;
+  height: 100%;
+}
+
+.manzdev {
+  animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+  0%, 50% { translate: 0 20px; }
+  75%, 100% { translate: 0 350px; }
+}
+
+:is(.css, .tailwind) {
+  width: 256px;
+  z-index: -1;
+}
+
+.css {
+  animation: left-appears 6s infinite alternate 3s;
+  rotate: -8deg;
+}
+
+.tailwind {
+  animation: right-appears 6s infinite alternate;
+}
+
+@keyframes right-appears {
+  50%, 75% { translate: 300px 0; }
+}
+
+@keyframes left-appears {
+  50%, 75% { translate: -260px 25px; }
+}
+
+/*  bubble animated*/
+/* Background */
+.area {
+  background: linear-gradient(to right, #1388a5,#65d7eb );
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Circles container */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Common styles for circles */
+.circle {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.2);
+  bottom: -150px;
+  animation: animate 25s linear infinite;
+  border-radius: 50%;
+}
+
+/* Circle sizes and positions */
+.circle1 {
+  width: 80px;
+  height: 80px;
+  left: 25%;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 20px;
+  height: 20px;
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circle3 {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  animation-delay: 4s;
+}
+
+.circle4 {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circle5 {
+  width: 20px;
+  height: 20px;
+  left: 65%;
+  animation-delay: 0s;
+}
+
+.circle6 {
+  width: 110px;
+  height: 110px;
+  left: 75%;
+  animation-delay: 3s;
+}
+
+.circle7 {
+  width: 150px;
+  height: 150px;
+  left: 35%;
+  animation-delay: 7s;
+}
+
+.circle8 {
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circle9 {
+  width: 15px;
+  height: 15px;
+  left: 20%;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circle10 {
+  width: 150px;
+  height: 150px;
+  left: 85%;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+/* Animation */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+
+.about-h1 h1{
+@apply text-3xl
+}
+
+.about-h2 h2{
+  @apply text-2xl
+}
+
+.hover-home{
+  @apply hover:scale-125 transition-all duration-500
+}
+.nav-head li{
+  @apply  max-w-xs transition duration-300 ease-in-out transform hover:scale-110 border-transparent   hover:font-bold    mx-0.5 px-1   ;
+}
+.mobile-nav{
+  @apply fixed top-10 left-0 bg-white w-full h-auto p-3;
+}
+html{
+  scroll-behavior: smooth;
+}
