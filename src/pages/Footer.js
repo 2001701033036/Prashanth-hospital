@@ -6,7 +6,7 @@ function Footer(){
     return(
         <section id="footer" className="  md:flex items-center flex-col  md:px-6 md:pt-[800px]">
        <div className=" ">
-       <div className="bg-neutral-600 rounded-md justify-items-center grid-rows-2 grid md:space-y-12 md:px-80 px-24 md:p-5 md:block hidden">
+       <div className="bg-neutral-600 rounded-md justify-items-center grid-rows-2 md:space-y-12  px-24 md:p-5 md:block hidden">
         <img src={logoph} className="animate-pulse "/>
         <p className="md:text-5xl text-xl font-bold text-cyan-500 font-serif text-nowrap">Prashanth Hospital</p>
         <p className="text-white md:text-2xl ">Your Wellness, Our Priority</p>

@@ -37,10 +37,11 @@ function Home() {
   </ul>
 </div>
 
-<div className=" md:items-end">
-<div className="md:flex md:w-auto justify-end ">
+<div className=" ">
+<div className="md:flex flex-row">
 
-            <motion.div 
+           <div className="w-full max-w-xl px-4 ">
+           <motion.div 
                 variants={fadeIn("down", 0.2)} // Use fadeIn as variants
                 initial="hidden"
                 whileInView="show"  // This will trigger the animation when the element is in view
@@ -48,8 +49,8 @@ function Home() {
                 className="md:p-10 md:block hidden"
             >
                 
-               <div className=" w-[500px]">
-               <p className="md:text-4xl text-2xl font-bold text-white md:text-start md:pt-56 pt-28 font-serif">
+               <div className="  ">
+               <p className="md:text-3xl text-2xl font-bold text-white md:text-start md:pt-56 pt-28 font-serif">
                 Simplify Healthcare with <br />Prashanth Hospital's App!
                 </p>
                 <p className="md:text-start text-wrap mx-auto text-white  p-2 md:p-0  mt-5">
@@ -60,7 +61,7 @@ function Home() {
                 
                 
 
-                <div className="md:flex   md:gap-10 gap-2 md:pt-8 pt-10 flex items-center justify-center  ">
+                <div className="md:flex  md:gap-10 gap-2 md:pt-8 pt-10 flex items-center justify-center  ">
                 
                 <AppStoreButton
                     url={APKappstore}
@@ -75,7 +76,9 @@ function Home() {
                   
             </div>
             </motion.div>
+           </div>
 
+            <div className="">
             <motion.div 
                 variants={fadeIn("up", 0.2)} 
                 initial="hidden" 
@@ -83,10 +86,10 @@ function Home() {
                 viewport={{ once: true, amount: 0.7 }} // Correct usage of viewport prop
                 className="flex md:flex-col mb-10 "
             >
-                <div className="md:flex flex rounded md:mt-24 mt-10 pl-5 md:pl-0 relative ">
+                <div className="md:flex flex rounded md:mt-24 mt-10 pl-5 relative  ">
 
                    {/* FIRST IMAGE */}
-                   <div className="relative md:w-[350px] xl:w-[3500] w-44  h-full animate-bounceSlow md:mt-0 md:mr-0  mt-60"
+                   <div className="md:relative  md:w-full md:max-w-[300px]  px-2 md:h-full animate-bounceSlow md:mt-0 pt-10 "
                     style={{zIndex: -1,
                         postion:"",
                         transform: `translateY(-${scrollY * 0.3}px)`, // Move the image up as you scroll
@@ -95,14 +98,14 @@ function Home() {
                     }}>
                         
                         <img
-                            src="../images/fmf.png"
-                            alt="Image 1"
-                            className="absolute md:top-10  hover-home left-0 bottom-20 md:bottom-0  object-cover rounded-lg  "
-                        />
+    src="../images/fmf.png"
+    alt="Image 1"
+    className="w-full h-auto object-contain rounded-lg"
+  />
                     </div>
 
                     {/* SECOND IMAGE */}
-                    <div className="relative md:w-[350px] xl:w-[3500] w-44  h-full animate-bounceReverse md:mt-0 mt-60 md:ml-0 "
+                    <div className="md:relative md:w-full max-w-[300px]  md:h-full animate-bounceReverse   md:mt-0 pt-10  md:ml-0 "
                     style={{zIndex: -1,
                         postion:"",
                         transform: `translateY(-${scrollY * 0.3}px)`, // Move the image up as you scroll
@@ -113,7 +116,7 @@ function Home() {
                         <img
                             src="../images/hm.png"
                             alt="Image 2"
-                            className="absolute md:top-10  hover-home left-0 bottom-20 md:bottom-0  object-cover rounded-lg  "
+                            className="w-full h-auto object-contain rounded-lg  "
                         />
                     </div>
                   
@@ -121,6 +124,7 @@ function Home() {
                     <img src="images/f.png" alt="Service Image 3" className="w-1/3 hover-home hidden md:block" /> */}
                 </div>
             </motion.div>
+            </div>
             
             </div>
             
@@ -132,7 +136,7 @@ function Home() {
                 initial="hidden"
                 whileInView="show"  // This will trigger the animation when the element is in view
                 viewport={{ once: true, amount: 0.7 }} // Proper usage of viewport
-                className="md:hidden block items-center pt-28 mb-10 "
+                className="md:hidden block items-center  mb-10 "
             >
                 <p className="text-2xl font-bold text-white font-serif">
                 Simplify Healthcare with <br />Prashanth Hospital's App!
