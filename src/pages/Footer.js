@@ -5,13 +5,14 @@ function Footer(){
     const APKappstore = "https://apps.apple.com/in/app/prashanth-hospitals/id6471096372";
     return(
         <section id="footer" className="  md:flex items-center flex-col  md:px-6 md:pt-[800px]">
-       <div className=" ">
-       <div className="bg-neutral-600 rounded-md justify-items-center grid-rows-2 md:space-y-12  px-24 md:p-5 md:block hidden">
-        <img src={logoph} className="animate-pulse "/>
-        <p className="md:text-5xl text-xl font-bold text-cyan-500 font-serif text-nowrap">Prashanth Hospital</p>
+      
+
+       <div className="bg-neutral-600 rounded-md justify-items-center w-full max-w-4xl  md:space-y-12  md:px-28  md:block hidden">
+        <img src={logoph} className=" "/>
+        <p className="md:text-4xl text-xl font-bold text-cyan-500 font-serif text-nowrap">Prashanth Hospital</p>
         <p className="text-white md:text-2xl ">Your Wellness, Our Priority</p>
 
-        <div className="md:flex  flex-row  md:gap-10  md:pt-8 md:pb-0 ">                 
+        <div className="md:flex  flex-row  md:gap-6  md:pb-8 ">                 
                         <AppStoreButton
                             url={APKappstore}
                             theme={"dark"}
@@ -27,6 +28,7 @@ function Footer(){
 
             </div>
 
+{/* MOBILE */}
            <div className="p-2 ">
            <div className="md:hidden block bg-neutral-600 shadow-smw-full py-10 rounded-xl  ">
 
@@ -53,7 +55,7 @@ function Footer(){
 </div>
 </div>
            </div>
-       </div>
+       
 
         </section>
     )
