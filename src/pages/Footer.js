@@ -4,7 +4,7 @@ function Footer(){
     const APKUrl = "https://play.google.com/store/apps/details?id=com.prashanth_hospital_patientapp&pcampaignid=web_share";
     const APKappstore = "https://apps.apple.com/in/app/prashanth-hospitals/id6471096372";
     return(
-        <section id="footer" className="  md:flex items-center flex-col  md:px-6 md:pt-[800px]">
+        <section id="footer" className="  md:flex items-center flex-col  md:px-6 md:pt-[250px]">
       
 
        <div className="bg-neutral-600 rounded-md justify-items-center w-full max-w-4xl  md:space-y-12  md:px-28  md:block hidden">

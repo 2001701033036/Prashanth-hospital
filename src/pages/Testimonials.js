@@ -110,9 +110,9 @@ export function InfiniteMovingCardsDemo() {
   return (
    <section id="testimonials" className="scroll-mt-14">
     <div className="">
-    <p className="text-4xl font-bold">Testimonials</p>
+    <p className="text-4xl font-bold border-cyan-600 border-b-4 w-[230px]  items-center flex flex-col m-auto">Testimonials</p>
      <div
-      className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      className=" md:mb-0  h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
     </div>
